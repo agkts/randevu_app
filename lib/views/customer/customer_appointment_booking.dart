@@ -7,8 +7,8 @@ import '../../constants/app_text_styles.dart';
 import '../../controllers/appointment_controller.dart';
 import '../../controllers/hairdresser_controller.dart';
 import '../../controllers/service_controller.dart';
-import '../../models/hairdresser.dart';
-import '../../models/service.dart';
+//import '../../models/hairdresser.dart'; unused
+//import '../../models/service.dart'; unused
 import '../../routes/app_routes.dart';
 import '../../utils/responsive_size.dart';
 import '../common/custom_app_bar.dart';
@@ -53,7 +53,7 @@ class _CustomerAppointmentBookingScreenState
   final RxList<String> availableTimeSlots = <String>[].obs;
   final DateTime currentDate = DateTime.now();
   final CalendarFormat _calendarFormat = CalendarFormat.month;
-  final RxDateTime focusedDay = DateTime.now().obs;
+  final Rx<DateTime> focusedDay = DateTime.now().obs;
 
   @override
   void initState() {

@@ -30,7 +30,7 @@ class _HairdresserAppointmentsScreenState
 
   // Takvim değişkenleri
   final CalendarFormat _calendarFormat = CalendarFormat.month;
-  final RxDateTime _focusedDay = DateTime.now().obs;
+  final Rx<DateTime> _focusedDay = DateTime.now().obs;
   final Rx<DateTime?> _selectedDay = Rx<DateTime?>(DateTime.now());
 
   // Filtreleme seçenekleri

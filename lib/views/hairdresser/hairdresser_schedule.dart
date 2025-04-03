@@ -36,7 +36,7 @@ class _HairdresserScheduleScreenState extends State<HairdresserScheduleScreen>
 
   // Takvim değişkenleri
   final CalendarFormat _calendarFormat = CalendarFormat.month;
-  final RxDateTime _focusedDay = DateTime.now().obs;
+  final Rx<DateTime> _focusedDay = DateTime.now().obs;
   final Rx<Set<DateTime>> _selectedDays = Rx<Set<DateTime>>(Set<DateTime>());
 
   // Yükleniyor durumu
