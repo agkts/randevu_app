@@ -1,0 +1,58 @@
+randevu_app/
+├── lib/
+│   ├── main.dart                 # Ana uygulama başlangıç noktası
+│   ├── constants/                # Sabit değerler (renkler, metin stilleri vb.)
+│   │   ├── app_colors.dart
+│   │   ├── app_text_styles.dart
+│   │   └── assets_path.dart
+│   ├── models/                   # Veri modelleri
+│   │   ├── appointment.dart
+│   │   ├── user.dart
+│   │   ├── hairdresser.dart
+│   │   ├── salon.dart
+│   │   └── service.dart
+│   ├── controllers/              # GetX kontrolcüler
+│   │   ├── auth_controller.dart
+│   │   ├── appointment_controller.dart
+│   │   ├── hairdresser_controller.dart
+│   │   ├── salon_controller.dart
+│   │   └── customer_controller.dart
+│   ├── services/                 # API ve diğer servisler
+│   │   ├── api_service.dart
+│   │   ├── storage_service.dart
+│   │   └── notification_service.dart
+│   ├── views/                    # Ekranlar
+│   │   ├── common/               # Ortak bileşenler
+│   │   │   ├── app_bar.dart
+│   │   │   ├── custom_button.dart
+│   │   │   └── custom_text_field.dart
+│   │   ├── customer/             # Müşteri ekranları
+│   │   │   ├── customer_appointment_booking.dart
+│   │   │   ├── customer_appointment_manage.dart
+│   │   │   └── customer_appointment_confirmation.dart
+│   │   ├── hairdresser/          # Kuaför ekranları
+│   │   │   ├── hairdresser_login.dart
+│   │   │   ├── hairdresser_dashboard.dart
+│   │   │   ├── hairdresser_appointments.dart
+│   │   │   ├── hairdresser_schedule.dart
+│   │   │   ├── hairdresser_customers.dart
+│   │   │   └── hairdresser_settings.dart
+│   │   ├── salon_owner/          # Salon sahibi ekranları
+│   │   │   ├── salon_owner_login.dart
+│   │   │   ├── salon_owner_dashboard.dart
+│   │   │   ├── salon_owner_hairdressers.dart
+│   │   │   ├── salon_owner_services.dart
+│   │   │   ├── salon_owner_appointments.dart
+│   │   │   ├── salon_owner_reports.dart
+│   │   │   └── salon_owner_settings.dart
+│   │   └── splash_screen.dart
+│   ├── routes/                   # Rota yönetimi
+│   │   └── app_routes.dart
+│   └── utils/                    # Yardımcı fonksiyonlar
+│       ├── date_formatter.dart
+│       ├── validators.dart
+│       └── responsive_size.dart
+├── assets/                       # Görseller, fontlar vb.
+│   ├── images/
+│   └── fonts/
+└── pubspec.yaml                  # Bağımlılıklar ve uygulama bilgileri
