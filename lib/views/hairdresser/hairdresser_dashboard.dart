@@ -10,7 +10,7 @@ import '../../models/appointment.dart';
 import '../../routes/app_routes.dart';
 import '../../utils/responsive_size.dart';
 import '../../views/common/custom_app_bar.dart';
-import '../../views/common/custom_button.dart';
+// import '../../views/common/custom_button.dart'; unused
 
 class HairdresserDashboardScreen extends StatefulWidget {
   const HairdresserDashboardScreen({Key? key}) : super(key: key);

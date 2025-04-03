@@ -6,9 +6,9 @@ import '../../constants/app_colors.dart';
 import '../../constants/app_text_styles.dart';
 import '../../controllers/appointment_controller.dart';
 import '../../models/appointment.dart';
-import '../../utils/responsive_size.dart';
+// import '../../utils/responsive_size.dart'; unused
 import '../common/custom_app_bar.dart';
-import '../../views/common/custom_button.dart';
+// import '../../views/common/custom_button.dart'; unused
 
 class HairdresserAppointmentsScreen extends StatefulWidget {
   const HairdresserAppointmentsScreen({Key? key}) : super(key: key);

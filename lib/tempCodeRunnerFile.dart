@@ -1,7 +1,7 @@
 // This is a temporary code runner file for testing Randevu App functionality
 // You can use this to test specific parts of your code without running the entire app
 
-import 'dart:convert';
+// import 'dart:convert'; unused
 
 void main() {
   // Test Appointment data structure
