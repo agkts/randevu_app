@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:randevu_app/controllers/auth_controller.dart';
 
 // Ekranları import et
 import '../views/splash_screen.dart';
