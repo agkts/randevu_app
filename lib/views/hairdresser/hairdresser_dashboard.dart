@@ -64,7 +64,7 @@ class _HairdresserDashboardScreenState
 
     if (confirm) {
       await _authController.logout();
-      Get.offAllNamed(AppRoutes.hairdresserLogin);
+      Get.offAllNamed(AppRoutes.login);
     }
   }
 

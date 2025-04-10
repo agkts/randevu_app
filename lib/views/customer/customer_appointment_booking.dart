@@ -167,28 +167,24 @@ class _CustomerAppointmentBookingScreenState
       appBar: CustomAppBar(
         title: 'Randevu Al',
         showBackButton: false,
-        //!! burası ai ile düzenlenecek
+        // Sol tarafa (leading) kuaför ve salon sahibi girişi butonu
+        leading: IconButton(
+          icon: const Icon(Icons.login),
+          tooltip: 'Kuaför ve Salon Sahibi Girişi',
+          onPressed: () {
+            Get.toNamed(AppRoutes.login);
+          },
+        ),
+        // Sağ tarafa (actions) randevu düzenleme butonu
         actions: [
-          TextButton(
+          IconButton(
+            icon: const Icon(Icons.edit_calendar),
+            tooltip: 'Randevu Düzenle',
             onPressed: () {
-              Get.toNamed(AppRoutes.hairdresserLogin);
+              Get.toNamed(AppRoutes.customerAppointmentManage);
             },
-            child: Text(
-              "Giriş Yap",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
           ),
         ],
-        leading: IconButton(
-          onPressed: () {
-            Get.toNamed(AppRoutes.customerAppointmentManage);
-          },
-          icon: Icon(Icons.edit_document),
-        ),
-        //!!!!!!!!!
       ),
       body: SafeArea(
         child: SingleChildScrollView(

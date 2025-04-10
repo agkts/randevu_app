@@ -296,7 +296,7 @@ class _SalonOwnerSettingsScreenState extends State<SalonOwnerSettingsScreen>
 
     if (confirm) {
       await _authController.logout();
-      Get.offAllNamed(AppRoutes.salonOwnerLogin);
+      Get.offAllNamed(AppRoutes.login);
     }
   }
 

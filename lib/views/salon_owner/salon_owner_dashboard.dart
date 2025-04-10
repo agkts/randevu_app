@@ -70,7 +70,7 @@ class _SalonOwnerDashboardScreenState extends State<SalonOwnerDashboardScreen> {
 
     if (confirm) {
       await _authController.logout();
-      Get.offAllNamed(AppRoutes.salonOwnerLogin);
+      Get.offAllNamed(AppRoutes.login);
     }
   }
 

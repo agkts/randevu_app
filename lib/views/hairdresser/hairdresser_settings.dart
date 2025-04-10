@@ -144,7 +144,7 @@ class _HairdresserSettingsScreenState extends State<HairdresserSettingsScreen> {
 
     if (confirm) {
       await _authController.logout();
-      Get.offAllNamed(AppRoutes.hairdresserLogin);
+      Get.offAllNamed(AppRoutes.login);
     }
   }
 

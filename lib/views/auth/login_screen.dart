@@ -8,14 +8,14 @@ import '../../utils/responsive_size.dart';
 import '../../views/common/custom_button.dart';
 import '../../views/common/custom_text_field.dart';
 
-class SalonOwnerLoginScreen extends StatefulWidget {
-  const SalonOwnerLoginScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  State<SalonOwnerLoginScreen> createState() => _SalonOwnerLoginScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _SalonOwnerLoginScreenState extends State<SalonOwnerLoginScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   // Controller
   final AuthController _authController = Get.find<AuthController>();
 
@@ -47,10 +47,10 @@ class _SalonOwnerLoginScreenState extends State<SalonOwnerLoginScreen> {
       final bool success = await _authController.login(username, password);
 
       if (success) {
-        if (_authController.isSalonOwner) {
-          Get.offAllNamed(AppRoutes.salonOwnerDashboard);
-        } else if (_authController.isHairdresser) {
+        if (_authController.isHairdresser) {
           Get.offAllNamed(AppRoutes.hairdresserDashboard);
+        } else if (_authController.isSalonOwner) {
+          Get.offAllNamed(AppRoutes.salonOwnerDashboard);
         } else {
           Get.snackbar(
             'Hata',
@@ -112,7 +112,7 @@ class _SalonOwnerLoginScreenState extends State<SalonOwnerLoginScreen> {
                     Text('Randevu App', style: AppTextStyles.heading2),
                     const SizedBox(height: 8),
                     Text(
-                      'Salon Sahibi Girişi',
+                      'Kuaför ve Salon Sahibi Girişi',
                       style: AppTextStyles.bodyLarge.copyWith(
                         color: AppColors.textSecondary,
                       ),
@@ -169,14 +169,6 @@ class _SalonOwnerLoginScreenState extends State<SalonOwnerLoginScreen> {
                       );
                     }),
                     const SizedBox(height: 24),
-
-                    // Kuaför giriş sayfasına yönlendirme
-                    TextButton(
-                      onPressed: () {
-                        Get.offAllNamed(AppRoutes.hairdresserLogin);
-                      },
-                      child: Text('Kuaför Girişi', style: AppTextStyles.link),
-                    ),
 
                     // Müşteri sayfasına yönlendirme
                     TextButton(
