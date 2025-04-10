@@ -172,7 +172,18 @@ class _HairdresserDashboardScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Kuaför Paneli', showBackButton: false),
+      appBar: CustomAppBar(
+        title: 'Kuaför Paneli',
+        showBackButton: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              Get.toNamed(AppRoutes.hairdresserSettings);
+            },
+          ),
+        ],
+      ),
       drawer: _buildDrawer(),
       body: RefreshIndicator(
         onRefresh: _loadInitialData,

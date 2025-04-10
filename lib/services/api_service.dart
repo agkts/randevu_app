@@ -1,4 +1,4 @@
-import 'dart:convert';
+/* import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
 
@@ -248,13 +248,13 @@ class ApiService {
   Future<Map<String, dynamic>> deleteAppointment(String appointmentId) async {
     return await delete('appointments/$appointmentId');
   }
-}
+} */
 
 // lib/services/api_service.dart
 // API URL'yi değiştirin
 // ...
 //!!!Mockup test için değiştirilmiş api service
-/* import 'dart:convert';
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
 
@@ -505,4 +505,4 @@ class ApiService {
   Future<Map<String, dynamic>> deleteAppointment(String appointmentId) async {
     return await delete('appointments/$appointmentId');
   }
-} */
+}

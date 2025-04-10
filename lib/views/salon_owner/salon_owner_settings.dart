@@ -558,6 +558,7 @@ class _SalonOwnerSettingsScreenState extends State<SalonOwnerSettingsScreen>
                           SizedBox(
                             width: 100,
                             child: DropdownButtonFormField<int>(
+                              isExpanded: true,
                               value: _defaultAppointmentDuration.value,
                               decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.symmetric(
@@ -598,6 +599,7 @@ class _SalonOwnerSettingsScreenState extends State<SalonOwnerSettingsScreen>
                           SizedBox(
                             width: 100,
                             child: DropdownButtonFormField<int>(
+                              isExpanded: true,
                               value: _minimumNoticeTime.value,
                               decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.symmetric(
@@ -640,6 +642,7 @@ class _SalonOwnerSettingsScreenState extends State<SalonOwnerSettingsScreen>
                           SizedBox(
                             width: 100,
                             child: DropdownButtonFormField<int?>(
+                              isExpanded: true,
                               value: _cancelationTimeLimit.value,
                               decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.symmetric(
@@ -717,6 +720,7 @@ class _SalonOwnerSettingsScreenState extends State<SalonOwnerSettingsScreen>
                           SizedBox(
                             width: 100,
                             child: DropdownButtonFormField<int>(
+                              isExpanded: true,
                               value: _reminderTimeBeforeAppointment.value,
                               decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.symmetric(
