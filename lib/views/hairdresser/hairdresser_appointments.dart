@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:randevu_app/routes/app_routes.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 import '../../constants/app_colors.dart';
@@ -159,7 +160,7 @@ class _HairdresserAppointmentsScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Randevularım'),
+      appBar: CustomAppBar(title: 'Randevularım'),
       body: SafeArea(
         child: Column(
           children: [

@@ -77,7 +77,20 @@ class _SalonOwnerDashboardScreenState extends State<SalonOwnerDashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Salon Paneli', showBackButton: false),
+      appBar: CustomAppBar(
+        title: 'Salon Paneli',
+        showBackButton: false,
+
+        //!!!!!! burası ai ile kontrol edilecek
+        actions: [
+          IconButton(
+            onPressed: () {
+              Get.toNamed(AppRoutes.salonOwnerSettings);
+            },
+            icon: Icon(Icons.settings),
+          ),
+        ],
+      ),
       drawer: _buildDrawer(),
       body: RefreshIndicator(
         onRefresh: _loadInitialData,

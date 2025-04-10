@@ -164,7 +164,32 @@ class _CustomerAppointmentBookingScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Randevu Al', showBackButton: false),
+      appBar: CustomAppBar(
+        title: 'Randevu Al',
+        showBackButton: false,
+        //!! burası ai ile düzenlenecek
+        actions: [
+          TextButton(
+            onPressed: () {
+              Get.toNamed(AppRoutes.hairdresserLogin);
+            },
+            child: Text(
+              "Giriş Yap",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+        leading: IconButton(
+          onPressed: () {
+            Get.toNamed(AppRoutes.customerAppointmentManage);
+          },
+          icon: Icon(Icons.edit_document),
+        ),
+        //!!!!!!!!!
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: Responsive.pagePadding,
